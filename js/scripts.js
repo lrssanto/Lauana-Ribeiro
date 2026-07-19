@@ -156,3 +156,41 @@
     });
   });
 })();
+
+const budgetModal = document.getElementById("budgetModal");
+
+const openBudgetModal = document.getElementById("openBudgetModal");
+
+const closeBudgetModal = document.getElementById("closeBudgetModal");
+
+openBudgetModal.addEventListener("click", () => {
+
+    budgetModal.classList.add("active");
+
+});
+
+closeBudgetModal.addEventListener("click", () => {
+
+    budgetModal.classList.remove("active");
+
+});
+
+budgetModal.addEventListener("click",(e)=>{
+
+    if(e.target===budgetModal){
+
+        budgetModal.classList.remove("active");
+
+    }
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape"){
+
+        budgetModal.classList.remove("active");
+
+    }
+
+});
