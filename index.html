@@ -303,6 +303,77 @@
     </div>
   </section>
 
+  <!-- Modal Orçamento -->
+<div id="budgetModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" id="closeBudgetModal">
+            &times;
+        </button>
+
+        <h2>Solicite um orçamento</h2>
+
+        <p>
+            Preencha as informações abaixo. Retornarei o contato o mais breve possível.
+        </p>
+
+        <form
+            action="https://formsubmit.co/lauana.santolrs@gmail.com"
+            method="POST"
+            class="budget-form">
+
+            <input type="hidden" name="_subject" value="Novo pedido de orçamento">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-group">
+                <label>Nome completo</label>
+                <input
+                    type="text"
+                    name="Nome"
+                    placeholder="Seu nome"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Telefone</label>
+                <input
+                    type="tel"
+                    name="Telefone"
+                    placeholder="(51) 99999-9999"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>E-mail</label>
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="seu@email.com"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Conte um pouco sobre seu projeto</label>
+
+                <textarea
+                    name="Mensagem"
+                    rows="6"
+                    placeholder="Descreva seu projeto, objetivo ou dúvida..."
+                    required></textarea>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+                Enviar orçamento
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
   <!-- Footer -->
   <footer>
     <div class="container">
